@@ -68,9 +68,6 @@
           .get('http://ec2-44-201-108-206.compute-1.amazonaws.com/decameron/api/rooms/' + this.$route.params.id)
           .then( response => {
             this.hoteles = response.data.data
-            this.room.room_type_id =  this.hoteles[0].room_type_id,
-            this.room.accommodation_id =  this.hoteles[0].room_type_id,
-            this.room.quantity = this.hoteles[0].room_type_id
           });
 
         axios

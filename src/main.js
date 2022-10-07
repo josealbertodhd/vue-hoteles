@@ -6,13 +6,13 @@ import "bootstrap-icons/font/bootstrap-icons.css"
 import "bootstrap"
 
 import HotelesPage from "@/pages/HotelesPage.vue";
-import HotelesCreatePage from "@/pages/HotelesCreatePage.vue";
-import HabitacionesPage from "@/pages/HabitacionesPage.vue";
+import HotelesCreatePage from "@/pages/hoteles/HotelesCreatePage.vue";
+import HabitacionesPage from "@/pages/Habitaciones/HabitacionesPage.vue";
 import AcomodacionesPage from "@/pages/AcomodacionesPage.vue";
-import DetallesPage from "@/pages/DetallesPage.vue";
-import HabitacionPage from "@/pages/HabitacionPage.vue";
+import DetallesPage from "@/pages/hoteles/DetallesPage.vue";
+import HabitacionPage from "@/pages/Habitaciones/HabitacionPage.vue";
 import HabitacionCreatePage from "@/pages/HabitacionCreatePage.vue";
-import HabitacionEditarPage from "@/pages/HabitacionEditarPage.vue";
+import HabitacionEditarPage from "@/pages/Habitaciones/HabitacionEditarPage.vue";
 
 
 const router = createRouter({

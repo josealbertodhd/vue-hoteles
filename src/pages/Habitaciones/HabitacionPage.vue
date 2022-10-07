@@ -30,7 +30,7 @@
                       <td>{{hotel.quantity}}</td>
                       <td class="d-flex justify-content-center">
                           <router-link :to="{ name:'HabitacionEditarPage', params:{id:hotel.id, item: this.$route.params.id}}" class="btn btn-warning rounded-4 text-white mx-1" aria-current="page" href="#"><strong>Editar</strong></router-link>
-                          <button @click="eliminarHabitacion" type="submit" class="btn btn-danger rounded-4 mx-1"><strong>Eliminar</strong></button>
+                          <button @click="eliminarHabitacion(hotel.id)" type="submit" class="btn btn-danger rounded-4 mx-1"><strong>Eliminar</strong></button>
                       </td>
                     </tr>
                   </tbody>
@@ -61,9 +61,9 @@
           }
       },
       methods: {
-        eliminarHabitacion() {
+        eliminarHabitacion(habitacion) {
           axios.
-           delete('http://ec2-44-201-108-206.compute-1.amazonaws.com/decameron/api/rooms/'+ this.hoteles[0].id)
+           delete('http://ec2-44-201-108-206.compute-1.amazonaws.com/decameron/api/rooms/'+ habitacion)
           .then(response => {
             console.log(response);
             location.reload();
